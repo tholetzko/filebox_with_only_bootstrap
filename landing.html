@@ -6,8 +6,8 @@
   <meta charset="utf-8">
 
   <!-- Connect to Bootstrap CSS -->
-  <!-- <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css"> -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css"> -->
 
   <!-- Connect to Font Awesome CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -29,6 +29,7 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,300italic,400italic,600italic,700italic,800,800italic' rel='stylesheet' type='text/css'>
 
   <!-- Test styling -->
+  <!--
   <style>
 
   .row {
@@ -38,7 +39,7 @@
   img, form, h1, h2, h3, p {
     border: thin green solid;
   }
-  </style>
+  </style> -->
 
 </head>
 
@@ -56,7 +57,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Brand</a>
+        <a class="navbar-brand" href="#"><i class="fa fa-dropbox" aria-hidden="true"></i></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -109,133 +110,262 @@
     </div>
 
     <!-- Row two -->
-    <div class="row">
+    <div class="row padding-inside-top-sm">
 
       <div class="col-md-offset-1 col-md-4">
-        <h4>
-          Filebox works the way you do
-        </h4>
+        <h2>
+          Works the way you do
+        </h2>
         <p>
           Get to all your files from anywhere, on any device, and shere them with anyone.
         </p>
       </div>
 
       <div class="col-md-offset-2 col-md-4">
-        <form>
+
+        <!-- Sign-up form -->
+        <form class="form-horizontal">
           <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            <!-- <label for="inputEmail3" class="col-sm-2 control-label">Full Name</label> -->
+            <div class="col-sm-10 btn-block">
+              <input type="email" class="form-control" id="inputFullName" placeholder="Full Name">
+            </div>
           </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+
+          <form class="form-horizontal">
+            <div class="form-group">
+              <!-- <label for="inputEmail3" class="col-sm-2 control-label">Email</label> -->
+              <div class="col-sm-10 btn-block">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <!-- <label for="inputPassword3" class="col-sm-2 control-label">Password</label> -->
+              <div class="col-sm-10 btn-block">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-10">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> I agree to <a href="https://www.dropbox.com/privacy" target="_blank">Filebox terms</a>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              Sign up for free
+            </button>
+
+            <hr>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              <i class="fa fa-fw fa-google"></i> Sign up free with Google
+            </button>
+
           </div>
-          <div class="form-group">
-            <label for="exampleInputFile">File input</label>
-            <input type="file" id="exampleInputFile">
-            <p class="help-block">Example block-level help text here.</p>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox"> Check me out
-            </label>
-          </div>
-          <button type="submit" class="btn btn-default">Submit</button>
+
         </form>
       </div>
-    </div>
 
-    <!-- Row three -->
-    <div class="row">
+      <!-- Row three -->
+      <div class="row padding-inside-top-lg">
 
-      <div class="col-md-offset-1 col-md-4">
-        <h4>
-          Take your docs anywhere
-        </h4>
-        <p>
-          Save files on your computer, then access them on your phone from the road. Everything you keep in Filebox is synced automatically to all your devices.
-        </p>
-      </div>
+        <div class="col-md-offset-1 col-md-4">
+          <h2>
+            Take your docs anywhere
+          </h2>
+          <p>
+            Save files on your computer, then access them on your phone from the road. Everything you keep in Filebox is synced automatically to all your devices.
+          </p>
+        </div>
 
-      <div class="col-md-offset-2 col-md-4">
-        <img src="assets/images/docs-anywhere.png" class="img-responsive">
-      </div>
-
-    </div>
-
-    <!-- Row four -->
-    <div class="row">
-      <div class="col-md-offset-1 col-md-4">
-        <img src="assets/images/send-videos-quickly.png" class="img-responsive">
-      </div>
-
-      <div class="col-md-offset-2 col-md-4">
-        <h4>Send videos quickly
-        </h4>
-        <p>Send your entire wedding video to family with a simple link. It’s easy to share large files with anyone — even if they don’t have a Filebox account.
-        </p>
-      </div>
-    </div>
-
-    <!-- Row five -->
-    <div class="row">
-      <div class="col-md-offset-1 col-md-4">
-        <h4> Keep your photos safe
-        </h4>
-        <p>  Back up vacation photos automatically from your phone or computer. That way, memories are safe as soon as you make them, and you can relive them from any device.
-        </p>
-      </div>
-
-      <div class="col-md-offset-2 col-md-4">
-        <img src="assets/images/keep-your-photos-safe.png" class="img-responsive">
-      </div>
-    </div>
-
-    <!-- Row six -->
-    <div class="row">
-      <div class="col-md-offset-1 col-md-4">
-        <img src="assets/images/work-on-slides-together.png" class="img-responsive">
-      </div>
-      <div class="col-md-offset-2 col-md-4">
-        <h4> Work on slides together
-        </h4>
-        <p> Edit a presentation with teammates without emailing files back and forth. When you edit a file in a shared folder, everyone gets the update automatically.
-        </p>
-      </div>
-    </div>
-
-    <!-- Row seven -->
-    <div class="row">
-      <div class="col-md-offset-1 col-md-4">
-        <h4>Never lose a file again
-        </h4>
-        <p> Left your phone on the train? Your photos, docs, and videos are safe. Just sign in to Filebox from any device, and your files will be there waiting for you.
-        </p>
-      </div>
-      <div class="col-md-offset-2 col-md-4">
+        <div class="col-md-offset-2 col-md-4">
+          <img src="assets/images/docs-anywhere.png" class="img-responsive">
+        </div>
 
       </div>
-    </div>
-    <!-- Row eight -->
-    <div class="row">
-      <div class="col-md-offset-4 col-md-4">
 
+      <!-- Row four -->
+      <div class="row padding-inside-top-lg">
+        <div class="col-md-offset-1 col-md-4">
+          <img src="assets/images/send-videos-quickly.png" class="img-responsive">
+        </div>
+
+        <div class="col-md-offset-2 col-md-4">
+          <h2>Send videos quickly
+          </h2>
+          <p>Send your entire wedding video to family with a simple link. It’s easy to share large files with anyone — even if they don’t have a Filebox account.
+          </p>
+        </div>
       </div>
-    </div>
 
-    <!-- Row nine -->
-    <div class="row">
-      <div class="col-md-2"></div>
-      <div class="col-md-2"></div>
-      <div class="col-md-2"></div>
-      <div class="col-md-2"></div>
-      <div class="col-md-2"></div>
-      <div class="col-md-2"></div>
-    </div>
+      <!-- Row five -->
+      <div class="row padding-inside-top-lg">
+        <div class="col-md-offset-1 col-md-4">
+          <h2> Keep your photos safe
+          </h2>
+          <p>  Back up vacation photos automatically from your phone or computer. That way, memories are safe as soon as you make them, and you can relive them from any device.
+          </p>
+        </div>
 
-  </div>
+        <div class="col-md-offset-2 col-md-4">
+          <img src="assets/images/keep-your-photos-safe.png" class="img-responsive">
+        </div>
+      </div>
+
+      <!-- Row six -->
+      <div class="row padding-inside-top-lg">
+        <div class="col-md-offset-1 col-md-4">
+          <img src="assets/images/work-on-slides-together.png" class="img-responsive">
+        </div>
+        <div class="col-md-offset-2 col-md-4">
+          <h2> Work on slides together
+          </h2>
+          <p> Edit a presentation with teammates without emailing files back and forth. When you edit a file in a shared folder, everyone gets the update automatically.
+          </p>
+        </div>
+      </div>
+
+      <!-- Row seven -->
+      <div class="row padding-inside-top-lg">
+        <div class="col-md-offset-1 col-md-4">
+          <h2>Never lose a file again
+          </h2>
+          <p> Left your phone on the train? Your photos, docs, and videos are safe. Just sign in to Filebox from any device, and your files will be there waiting for you.
+          </p>
+        </div>
+
+        <div class="col-md-offset-2 col-md-4">
+          <img src="assets/images/never-lose-a-file-again.png" class="img-responsive">
+
+        </div>
+      </div>
+
+      <!-- Row eight -->
+      <div class="row padding-inside-top-lg">
+        <div class="col-md-offset-4 col-md-4">
+          <h2 class="text-center"> Get started now
+          </h2>
+
+          <!-- Sign-up form -->
+          <form class="form-horizontal">
+            <div class="form-group">
+              <!-- <label for="inputEmail3" class="col-sm-2 control-label">Full Name</label> -->
+              <div class="col-sm-10 btn-block">
+                <input type="email" class="form-control" id="inputFullName" placeholder="Full Name">
+              </div>
+            </div>
+
+            <form class="form-horizontal">
+              <div class="form-group">
+                <!-- <label for="inputEmail3" class="col-sm-2 control-label">Email</label> -->
+                <div class="col-sm-10 btn-block">
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <!-- <label for="inputPassword3" class="col-sm-2 control-label">Password</label> -->
+                <div class="col-sm-10 btn-block">
+                  <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-10">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> I agree to <a href="https://www.dropbox.com/privacy" target="_blank">Filebox terms</a>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                Sign up for free
+              </button>
+
+              <hr>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <i class="fa fa-fw fa-google"></i> Sign up free with Google
+              </button>
+
+            </div>
+
+          </form>
+
+        </div>
+
+        <!-- Row nine -->
+        <div class="row padding-inside-top-lg padding-inside-bottom-lg">
+
+          <div class="col-lg-2">
+            <h4>Filebox</h4>
+            <ul class="list-unstyled">
+              <li>Desktop app</li>
+              <li>Mobile apps</li>
+              <li>Plans</li>
+              <li>Security</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2">
+            <h4>Company</h4>
+            <ul class="list-unstyled">
+              <li>About us</li>
+              <li>Jobs</li>
+              <li>Press</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2">
+            <h4>Support</h4>
+            <ul class="list-unstyled">
+              <li>Help Center</li>
+              <li>Get started</li>
+              <li>Contact</li>
+              <li>Privacy &amp; terms</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2">
+            <h4>Community</h4>
+            <ul class="list-unstyled">
+              <li>Developers</li>
+              <li>Referrals</li>
+              <li>Forum</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2">
+            <h4>Connect</h4>
+            <ul class="list-unstyled">
+              <li>Twitter</li>
+              <li>Facebook</li>
+              <li>Google+</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2">
+            <h4>Products</h4>
+            <ul class="list-unstyled">
+              <li>Pro</li>
+              <li>Business</li>
+              <li>Enterprise</li>
+            </ul>
+          </div>
+
+        </div>
 
 
-</body>
+      </body>
 
-</html>
+      </html>
