@@ -82,7 +82,6 @@ body {
   margin-bottom: 200px;
 }
 
-
-.test {
-  color: grey;
+img {
+  width: "fit-content";
 }
